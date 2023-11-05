@@ -41,19 +41,23 @@ class CoWbUnitProcess(object):
         注：变量名前面的下划线"_"代表该变量是私有变量，使得调用者不能轻易访问
         """
         self._workDir = Path(workDir) if workDir else Path(".") # 当前py文件所在位置
-        self._geo_folder = self._workDir / "geometry"
+       # self._geo_folder = self._workDir / "geometry"
+        self._wbjpFolder = self._workDir / "software"
+        self._geo_folder = self._wbjpFolder / "geometry"
         self._wbpj_name = wbpjName
+        self._wbjpFile = self._wbjpFolder / self._wbpj_name
         if f"AWP_ROOT{version}" not in os.environ:
             raise CoWbUnitRuntimeError(f"ANSYS version: v{version} is not installed!")
         self._ansysDir = Path(os.environ[f"AWP_ROOT{version}"])
         self._wbExe = self._ansysDir / "Framework" / "bin" / "Win64" / "runwb2.exe" # ansys workbench软件位置
-        self._wbjpFolder = self._workDir / "software"
-        self._wbjpFile = self._wbjpFolder / self._wbpj_name
+
+
         self._setting = None # UI界面设置的定义，之后再完善。
         self._interactive = interactive
         self._process = None
         self._coWbUnit = None
-        self._material_script = r'''
+        # 脚本创建及其处理
+        self.material_script = r'''
         # 创建静结构分析流程
         # 获得Engineering Data数据容器
         engData = mechSys.GetContainer(ComponentName="Engineering Data")
@@ -68,7 +72,8 @@ class CoWbUnitProcess(object):
 
         # 创建材料Steel，密度：7850kg/m3，杨氏模量：208e3MPa，泊松比：0.3
         CreateMaterial("Steel", 7850, 209.e3, 0.3)'''
-        self._geo_script = r'''
+        self.material_script = self._raw_script_process(self.material_script)
+        self.geo_script = r'''
         # Python Script, API Version = V18
         # 定义函数：通过坐标点选择面对象
         def GetFaceObjByPt(pt):
@@ -86,7 +91,8 @@ class CoWbUnitProcess(object):
         pressFace = GetFaceObjByPt(Point.Create(MM(50), MM(12.5), MM(20)))
         Selection.Create(pressFace).CreateAGroup("ns_press")
         '''
-        self._mech_launch_script = r'''
+        self.geo_script = self._raw_script_process(self.geo_script)
+        self.mech_launch_script = r'''
         # 刷新Model Component数据
         modelComp = mechSys.GetComponent(Name="Model")
         modelComp.Refresh()
@@ -94,7 +100,8 @@ class CoWbUnitProcess(object):
         model = mechSys.GetContainer(ComponentName="Model")
         model.Edit(Hidden=True)
         '''
-        self._mech_calcu_script = r'''
+        self.mech_launch_script = self._raw_script_process(self.mech_launch_script)
+        self.mech_calcu_script = r'''
         # encoding: utf-8
         # 给定Named Selection名称获取子对象实例
         def GetLocByName(ns_name):
@@ -131,19 +138,12 @@ class CoWbUnitProcess(object):
         # 输出后处理云图
         misesResult.Activate()
         ExtAPI.Graphics.ExportImage("%s")''' % str(self._workDir.absolute())
+        self.mech_calcu_script = self._raw_script_process(self.mech_calcu_script)
     def initialize(self) -> None:
         """Called before `execWbCommand`: Start the Workbench in interactive
         mode and open the TCP server port to create a socket connection
         :return: None
         """
-        # 脚本处理
-        self._material_script = self._rawScriptProcess(self._material_script)
-        self._geo_script = self._rawScriptProcess(self._geo_script)
-        self._mech_launch_script = self._rawScriptProcess(self._mech_launch_script)
-        self._mech_calcu_script = self._rawScriptProcess(self._mech_calcu_script)
-        # 创建几何模型
-        self._geo_folder.mkdir(parents=True, exist_ok=True) # 先创建空文件夹
-        self._scdm_modeling()
         # 打开AnsysWorkbench并建立连接
         if self._coWbUnit is not None:
             raise RuntimeError("Workbench client already started!")
@@ -160,17 +160,19 @@ class CoWbUnitProcess(object):
         else:
             batchArgs = fr'"{self._wbExe}" -s {stateOpt}'
         # 启动ansys workbench的批处理命令
-        # self._process = subprocess.Popen(batchArgs, cwd=str(self._workDir.absolute()),
-        #                                  stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    def _scdm_modeling(self,geo_name='geo.scdoc', geo_pyname='geo.py'):
+        self._process = subprocess.Popen(batchArgs, cwd=str(self._workDir.absolute()),
+                                          stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
+    def geo_modeling(self,geo_name='geo.scdoc', geo_pyname='geo.py'):
         # 确定建模软件、几何模型及其建模脚本的路径
         geo_py_file = str((self._geo_folder / geo_pyname).absolute())
         geo_file = str((self._geo_folder / geo_name).absolute())
         scdm_path = str(self._ansysDir / "scdm")
+        # 创建相应的文件夹
+        self._geo_folder.mkdir(parents=True, exist_ok=True)
         # 修正几何建模脚本：加上保存路径
         geoScript = """# 保存文件\noptions = ExportOptions.Create()\nDocumentSave.Execute(r"%s", options)""" \
                      % geo_file
-        geo_script = self._geo_script + geoScript
+        geo_script = self.geo_script + geoScript
         # 创建生成几何模型的py文件
         with open(geo_py_file, 'w', encoding="utf-8") as f:
             f.write(geo_script)
@@ -179,7 +181,27 @@ class CoWbUnitProcess(object):
         batchArgs = 'SpaceClaim.exe /RunScript=' + geo_py_file + stateOpt
         subprocess.run(batchArgs, shell=True, cwd=scdm_path, stdout=subprocess.DEVNULL)
 
-    def _rawScriptProcess(self, raw_script):
+        # 将几何模型导入Ansys Workbench
+        self.execWbCommand('geo=mechSys.GetContainer("Geometry")')
+        self.execWbCommand('geo.SetFile(FilePath="%s")' % geo_file)
+
+    def simula_sys_creat(self):
+        command = 'mechSys = GetTemplate(TemplateName="Static Structural", Solver="ANSYS").CreateSystem()'
+        self.execWbCommand(command)
+        self.execWbCommand('systems=GetAllSystems()')
+    def simula_sys_cal(self):
+        cal_launch_command = self.mech_launch_script
+        cal_content_command = f'model.SendCommand(Language="Python", Command={self.mech_calcu_script!r})'
+        cal_finish_command = 'model.Exit()'
+        self.execWbCommand(cal_launch_command)
+        self.execWbCommand(cal_content_command)
+        self.execWbCommand(cal_finish_command)
+    def simula_system(self):
+        pass
+
+    def mat_import(self):
+        self.execWbCommand(self.material_script)
+    def _raw_script_process(self, raw_script):
         # 分割字符串为行列表
         old_lines = raw_script.split('\n')[1:]  # 将多行字符串按行分割，同时去除掉空行1
         # 计算开头制表符的数量

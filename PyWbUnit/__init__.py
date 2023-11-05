@@ -11,4 +11,4 @@ from ._CoWbUnit import (CoWbUnitProcess, WbServerClient,
 from . import _Errors
 
 __all__ = ["CoWbUnitProcess", "WbServerClient",
-           "__version__", "__author__", "Errors"]
+           "__version__", "__author__", "_Errors"]

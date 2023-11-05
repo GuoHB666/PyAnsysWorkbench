@@ -7,4 +7,25 @@ string1 = Server.StartServer(
     PortMin=9000,
     PortMax=9200,
     WriteConnectionInfoFile="aaS_WbId.txt")
+template1 = GetTemplate(
+    TemplateName="Static Structural",
+    Solver="ANSYS")
+system1 = template1.CreateSystem()
+engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="Steel")
+matlProp1 = matl1.CreateProperty(Name="Density")
+matlProp1.SetData(
+    Variables=["Density"],
+    Values=[["7850 [kg m^-3]"]])
+matlProp2 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic")
+matlProp2.SetData(
+    Variables=["Young's Modulus"],
+    Values=[["209000 [MPa]"]])
+matlProp2.SetData(
+    Variables=["Poisson's Ratio"],
+    Values=[["0.3"]])
+geometry1 = system1.GetContainer(ComponentName="Geometry")
+geometry1.SetFile(FilePath="D:/GuoHB/MyFiles/Code/PyAnsysWorkbench/software/geometry/geo.scdoc")
 Save(Overwrite=True)

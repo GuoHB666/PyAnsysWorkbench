@@ -16,4 +16,4 @@ pressFace = GetFaceObjByPt(Point.Create(MM(50), MM(12.5), MM(20)))
 Selection.Create(pressFace).CreateAGroup("ns_press")
 # 保存文件
 options = ExportOptions.Create()
-DocumentSave.Execute(r"D:\GuoHB\MyFiles\Code\PyAnsysWorkbench\geometry\geo.scdoc", options)
+DocumentSave.Execute(r"D:\GuoHB\MyFiles\Code\PyAnsysWorkbench\software\geometry\geo.scdoc", options)
