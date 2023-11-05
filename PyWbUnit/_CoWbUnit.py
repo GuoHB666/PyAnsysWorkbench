@@ -197,7 +197,17 @@ class CoWbUnitProcess(object):
         self.execWbCommand(cal_content_command)
         self.execWbCommand(cal_finish_command)
     def simula_system(self):
-        pass
+        self.initialize()
+        # ! 创建仿真系统
+        self.simula_sys_creat()
+        # ! 创建材料
+        self.mat_import()
+        # ! 创建几何
+        self.geo_modeling()
+        # # ! 开展模拟计算
+        self.simula_sys_cal()
+        # ! 项目退出
+        self.finalize()
 
     def mat_import(self):
         self.execWbCommand(self.material_script)
