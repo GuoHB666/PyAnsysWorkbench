@@ -21,7 +21,7 @@ class CoWbUnitProcess(object):
     """Unit class for co-simulation with Workbench using Python.
 
     >>> coWbUnit = CoWbUnitProcess()
-    >>> coWbUnit.initialize()
+    >>> coWbUnit._initialize()
     >>> command = 'GetTemplate(TemplateName="Static Structural", Solver="ANSYS").CreateSystem()'
     >>> coWbUnit.execWbCommand(command)
     >>> coWbUnit.execWbCommand('systems=GetAllSystems()')
@@ -139,7 +139,19 @@ class CoWbUnitProcess(object):
         misesResult.Activate()
         ExtAPI.Graphics.ExportImage("%s")''' % str(self._workDir.absolute())
         self.mech_calcu_script = self._raw_script_process(self.mech_calcu_script)
-    def initialize(self) -> None:
+    def simula_system_run(self):
+        self._initialize()
+        # ! 创建仿真系统
+        self._simula_sys_creat()
+        # ! 创建材料
+        self._mat_import()
+        # ! 创建几何
+        self._geo_modeling()
+        # # ! 开展模拟计算
+        self._simula_sys_cal()
+        # ! 项目退出
+        self.finalize()
+    def _initialize(self) -> None:
         """Called before `execWbCommand`: Start the Workbench in interactive
         mode and open the TCP server port to create a socket connection
         :return: None
@@ -149,8 +161,6 @@ class CoWbUnitProcess(object):
             raise RuntimeError("Workbench client already started!")
         self._start_workbecnh()
         self._coWbUnit = WbServerClient(self._readWbId())
-
-
     def _start_workbecnh(self):
         aasFile = self._workDir / self._aasName
         self._clear_aasFile()
@@ -162,7 +172,8 @@ class CoWbUnitProcess(object):
         # 启动ansys workbench的批处理命令
         self._process = subprocess.Popen(batchArgs, cwd=str(self._workDir.absolute()),
                                           stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    def geo_modeling(self,geo_name='geo.scdoc', geo_pyname='geo.py'):
+
+    def _geo_modeling(self, geo_name='geo.scdoc', geo_pyname='geo.py'):
         # 确定建模软件、几何模型及其建模脚本的路径
         geo_py_file = str((self._geo_folder / geo_pyname).absolute())
         geo_file = str((self._geo_folder / geo_name).absolute())
@@ -185,31 +196,20 @@ class CoWbUnitProcess(object):
         self.execWbCommand('geo=mechSys.GetContainer("Geometry")')
         self.execWbCommand('geo.SetFile(FilePath="%s")' % geo_file)
 
-    def simula_sys_creat(self):
+    def _simula_sys_creat(self):
         command = 'mechSys = GetTemplate(TemplateName="Static Structural", Solver="ANSYS").CreateSystem()'
         self.execWbCommand(command)
         self.execWbCommand('systems=GetAllSystems()')
-    def simula_sys_cal(self):
+
+    def _simula_sys_cal(self):
         cal_launch_command = self.mech_launch_script
         cal_content_command = f'model.SendCommand(Language="Python", Command={self.mech_calcu_script!r})'
         cal_finish_command = 'model.Exit()'
         self.execWbCommand(cal_launch_command)
         self.execWbCommand(cal_content_command)
         self.execWbCommand(cal_finish_command)
-    def simula_system(self):
-        self.initialize()
-        # ! 创建仿真系统
-        self.simula_sys_creat()
-        # ! 创建材料
-        self.mat_import()
-        # ! 创建几何
-        self.geo_modeling()
-        # # ! 开展模拟计算
-        self.simula_sys_cal()
-        # ! 项目退出
-        self.finalize()
 
-    def mat_import(self):
+    def _mat_import(self):
         self.execWbCommand(self.material_script)
     def _raw_script_process(self, raw_script):
         # 分割字符串为行列表
