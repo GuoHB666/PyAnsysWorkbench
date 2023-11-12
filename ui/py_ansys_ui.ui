@@ -1,0 +1,1386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>984</width>
+    <height>865</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>多物理场计算、优化平台</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>resources/icons/geometry.xpm</normaloff>resources/icons/geometry.xpm</iconset>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTreeWidget" name="treeWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <column>
+       <property name="text">
+        <string>功能导航</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>resources/icons/ansys_pdslogo.gif</normaloff>resources/icons/ansys_pdslogo.gif</iconset>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>几何模型</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>resources/icons/geometry.xpm</normaloff>resources/icons/geometry.xpm</iconset>
+       </property>
+       <item>
+        <property name="text">
+         <string>保温层</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/insulation.gif</normaloff>resources/icons/insulation.gif</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>罐体</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/tank.png</normaloff>resources/icons/tank.png</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>地基</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/base.png</normaloff>resources/icons/base.png</iconset>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>物性参数</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>resources/icons/select_mater35.gif</normaloff>resources/icons/select_mater35.gif</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>多物理场计算</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>resources/icons/AnsysReportLogo.png</normaloff>resources/icons/AnsysReportLogo.png</iconset>
+       </property>
+       <item>
+        <property name="text">
+         <string>网格划分</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/mesh.gif</normaloff>resources/icons/mesh.gif</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>物理模型</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/temp_load.gif</normaloff>resources/icons/temp_load.gif</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>求解算法及其结果</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/result.xpm</normaloff>resources/icons/result.xpm</iconset>
+        </property>
+       </item>
+      </item>
+      <item>
+       <property name="text">
+        <string>寿命预测</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>resources/icons/PP_TimeStep35.gif</normaloff>resources/icons/PP_TimeStep35.gif</iconset>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>优化</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>resources/icons/B_Snap48.gif</normaloff>resources/icons/B_Snap48.gif</iconset>
+       </property>
+       <item>
+        <property name="text">
+         <string>定义</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/B_ExtendSplit35.gif</normaloff>resources/icons/B_ExtendSplit35.gif</iconset>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>优化结果</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>resources/icons/B_Regen35.gif</normaloff>resources/icons/B_Regen35.gif</iconset>
+        </property>
+       </item>
+      </item>
+     </widget>
+    </item>
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="mat_page">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>671</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>默认材料库</string>
+        </property>
+        <widget class="QTabWidget" name="tabWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>24</y>
+           <width>631</width>
+           <height>151</height>
+          </rect>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <widget class="QWidget" name="tab_fluid">
+          <attribute name="title">
+           <string>fluid</string>
+          </attribute>
+          <widget class="QTableWidget" name="tableWidget">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>0</y>
+             <width>151</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>32</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>74</number>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>22</number>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>温度</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>大小</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>0</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>2263.7</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>300</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>2071.7</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>600</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>1879.7</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+          </widget>
+          <widget class="QTableWidget" name="mat_table_fluid">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>451</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="tabletTracking">
+            <bool>false</bool>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideMiddle</enum>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>32</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>89</number>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>22</number>
+           </attribute>
+           <attribute name="verticalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>2</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>3</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>名称</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string notr="true">密度</string>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>比热容</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>导热系数</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>动力粘度</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>molten salt</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>air</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string/>
+            </property>
+           </item>
+          </widget>
+          <widget class="Line" name="line">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>0</y>
+             <width>21</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+         </widget>
+         <widget class="QWidget" name="tab_solid">
+          <attribute name="title">
+           <string>solid</string>
+          </attribute>
+          <widget class="Line" name="line_2">
+           <property name="geometry">
+            <rect>
+             <x>450</x>
+             <y>0</y>
+             <width>21</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+          </widget>
+          <widget class="QTableWidget" name="tableWidget_2">
+           <property name="geometry">
+            <rect>
+             <x>470</x>
+             <y>0</y>
+             <width>151</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>32</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>74</number>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>22</number>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>2</string>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>3</string>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>温度</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>大小</string>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>20</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>1.53E-05</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>100</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>1.62E-05</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>200</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>1.7E-05</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+          </widget>
+          <widget class="QTableWidget" name="mat_table_fluid_2">
+           <property name="enabled">
+            <bool>true</bool>
+           </property>
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>451</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="mouseTracking">
+            <bool>false</bool>
+           </property>
+           <property name="tabletTracking">
+            <bool>false</bool>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideMiddle</enum>
+           </property>
+           <attribute name="horizontalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderMinimumSectionSize">
+            <number>32</number>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>64</number>
+           </attribute>
+           <attribute name="horizontalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderCascadingSectionResizes">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderDefaultSectionSize">
+            <number>22</number>
+           </attribute>
+           <attribute name="verticalHeaderHighlightSections">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <row>
+            <property name="text">
+             <string>1</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>2</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </row>
+           <row>
+            <property name="text">
+             <string>3</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </row>
+           <column>
+            <property name="text">
+             <string>名称</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string notr="true">密度</string>
+            </property>
+            <property name="toolTip">
+             <string notr="true"/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>比热容</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>导热系数</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>膨胀系数</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>弹性模量</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>泊松比</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </column>
+           <item row="0" column="0">
+            <property name="text">
+             <string>347H</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="1">
+            <property name="text">
+             <string>800</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="2">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="3">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="4">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="5">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="0" column="6">
+            <property name="text">
+             <string>0.3</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="0">
+            <property name="text">
+             <string>Mineral wool</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="1">
+            <property name="text">
+             <string>100</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="2">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="3">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="4">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="5">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="1" column="6">
+            <property name="text">
+             <string>0.3</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="0">
+            <property name="text">
+             <string>Concrete</string>
+            </property>
+           </item>
+           <item row="2" column="1">
+            <property name="text">
+             <string>2200</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="2">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="3">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="4">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="5">
+            <property name="text">
+             <string>Tabular</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+           <item row="2" column="6">
+            <property name="text">
+             <string>0.3</string>
+            </property>
+            <property name="textAlignment">
+             <set>AlignCenter</set>
+            </property>
+           </item>
+          </widget>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>186</y>
+           <width>204</width>
+           <height>25</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="buttom_add_mat">
+            <property name="text">
+             <string>添加材料</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_mat_export">
+            <property name="text">
+             <string>材料导出</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>260</y>
+          <width>671</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>材料导入</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>路径</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="button_mat_export_2">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>打开</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>330</y>
+          <width>671</width>
+          <height>318</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>材料分配</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_8">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>请选择部件：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <item>
+              <property name="text">
+               <string>储罐</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>保温层</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>地基</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>当前材料库：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="listWidget">
+               <item>
+                <property name="text">
+                 <string>molten salt</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>air</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>347H</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Mineral wool</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Concrete</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Firebrick</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Expand clay</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Coarse sand</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Fine gravel</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Ceramsite</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="QPushButton" name="button_add">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>添加</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_8">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>resources/icons/ArrowRight.png</pixmap>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>已选择：</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="Line" name="line_4">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QListWidget" name="listWidget_2">
+               <item>
+                <property name="text">
+                 <string>molten salt(fluid1)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>air(fluid2)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>347H(tank)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Mineral wool(insulation)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Coarse sand(base1)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Ceramsite(base2)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Fine gravel(base3)</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Firebrick(base4)</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_9">
+               <item>
+                <widget class="QPushButton" name="button_delete">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>删除</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="geo_page"/>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>984</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>单位</string>
+    </property>
+    <addaction name="actionSI"/>
+    <addaction name="actionMetric"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>配置</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>导出</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>关于</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSI">
+   <property name="text">
+    <string>SI(kg,m,s,K,A,N,V)</string>
+   </property>
+  </action>
+  <action name="actionMetric">
+   <property name="text">
+    <string>Metric(kg,m,s,°C,A,N,V)</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

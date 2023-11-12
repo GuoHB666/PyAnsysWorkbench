@@ -1,0 +1,13 @@
+system23 = template1.CreateSystem(
+    Position="Below",
+    RelativeTo=system3)
+engineeringDataComponent17 = system23.GetComponent(Name="Engineering Data")
+geometryComponent2 = system23.GetComponent(Name="Geometry")
+system24 = template2.CreateSystem(
+    ComponentsToShare=[engineeringDataComponent17, geometryComponent2],
+    Position="Right",
+    RelativeTo=system23)
+solutionComponent3 = system23.GetComponent(Name="Solution")
+setupComponent2 = system24.GetComponent(Name="Setup")
+solutionComponent3.TransferData(TargetComponent=setupComponent2)
+Save(Overwrite=True)
