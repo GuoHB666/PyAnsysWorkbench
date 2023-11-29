@@ -1,0 +1,2426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EngineeringData version="21.2.0.240" versiondate="2021/6/1 14:03:00">
+  <Notes>
+  </Notes>
+  <Materials>
+    <MatML_Doc>
+      <Material>
+        <BulkDetails>
+          <Name>347H</Name>
+          <Class>
+            <Name>Alloy</Name>
+          </Class>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>132</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>139</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>179</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>8000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>1.53e-05,1.62e-05,1.7e-05,1.77e-05,1.81e-05,1.84e-05,1.87e-05</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>20,100,200,300,400,500,565</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>22</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>14.1,15.4,16.8,18.3,19.7,21.2,22.1</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>20,100,200,300,400,500,565</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa11" format="float">
+              <Data>195000000000,189000000000,183000000000,176000000000,169000000000,160000000000,153000000000</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.3,0.3,0.3,0.3,0.3,0.3,0.3</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>162500000000,157500000000,152500000000,146666666666.667,140833333333.333,133333333333.333,127500000000</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>75000000000,72692307692.3077,70384615384.6154,67692307692.3077,65000000000,61538461538.4615,58846153846.1538</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>20,100,200,300,400,500,565</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">24f7b3e9-bbce-4808-8b22-99153f4d3609</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>431,490,561,607</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>22,204,427,649</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Aluminium silicate</Name>
+          <Description>王昕，硅酸铝，类比硅酸镁，保温层最内层</Description>
+          <Class>
+            <Name>Alloy</Name>
+          </Class>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>132</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>139</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>179</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>128</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>900</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.046,0.122,0.158,0.194</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>20,400,500,600</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">a7ef1855-03bc-45e6-bc1d-e60d89390cc9</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Carbon steel, 1020, annealed</Name>
+          <Description>Carbon steel, AISI 1020, annealed
+&lt;br&gt;&lt;br&gt;Data compiled by the &lt;exta href="https://www.grantadesign.com"&gt;Granta Design&lt;/exta&gt; team at ANSYS, incorporating various sources including JAHM and MagWeb.
+&lt;br&gt;ANSYS Inc. provides no warranty for this data.</Description>
+          <Class>
+            <Name>Metals - ferrous</Name>
+          </Class>
+          <Subclass>
+            <Name>Low carbon steels</Name>
+          </Subclass>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>128</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>128</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>128</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr3">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa7" format="float">
+              <Data>1</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr4">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa9" format="float">
+              <Data>1</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>7850</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>23</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">23</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa11" format="float">
+              <Data>212400000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.29</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>168571428571.429</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>82325581395.3488</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>23</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">23</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr9">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa17" format="float">
+              <Data>293500000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>23</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr10">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa18" format="float">
+              <Data>393000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>23</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>1.143e-05</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>23</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">23</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>20</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>54.1</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>23</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">23</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>501.8</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>23</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">23</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">acb65b26-ec52-4498-9a3b-d1345a82d133</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+          <PropertyData property="pr12">
+            <Data format="string">-</Data>
+            <Qualifier name="Data link version">1</Qualifier>
+            <Qualifier name="Database key">Main</Qualifier>
+            <Qualifier name="History guid">acb65b26-ec52-4498-9a3b-d1345a82d133</Qualifier>
+            <Qualifier name="Version guid">f2e0fea7-cb84-4228-89f8-43a2c75cccd2</Qualifier>
+            <Qualifier name="Model guid">4E957B12-2E45-44E6-9185-4C722C2A9A78</Qualifier>
+            <Qualifier name="Model version">0</Qualifier>
+            <Qualifier name="Granta data">True</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+          <PropertyData property="pr13">
+            <Data format="string">-</Data>
+            <Qualifier name="Stateless Name">Carbon steel</Qualifier>
+            <Qualifier name="State">Solid</Qualifier>
+            <Qualifier name="Is Default State">true</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Ceramide</Name>
+          <Description>陶，地基第二层</Description>
+          <Class>
+            <Name>Alloy</Name>
+          </Class>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>132</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>139</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>179</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>580</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>1e-06</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>22</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>2047</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.28</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa11" format="float">
+              <Data>26000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.3</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>21666666.6666667</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>10000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">4be9da40-317d-47aa-9533-9f837e1b0f90</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Coarse sand</Name>
+          <Description>粗砂，地基最上层</Description>
+          <Class>
+            <Name>Alloy</Name>
+          </Class>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>132</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>139</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>179</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>2080</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>4e-06</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>22</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>840</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.87</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa11" format="float">
+              <Data>22800000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.3</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>19000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>8769230.76923077</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">8452a304-bf22-45b0-8692-da14d4c3cf40</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Concrete20</Name>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>2200</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.2</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>880</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>1e-05</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>
+              </Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa19" format="float">
+              <Data>20000000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.2</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>11111111111.1111</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>8333333333.33333</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Concrete30</Name>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>2300</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.2</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>880</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>1e-05</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>
+              </Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa19" format="float">
+              <Data>30000000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.2</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>16666666666.6667</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>12500000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Expanded clay</Name>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>400</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.4</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>200</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>2e-05</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>
+              </Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa19" format="float">
+              <Data>2400000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.2</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>1333333333.33333</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>1000000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Fine gravel</Name>
+          <Description>细砾石，地基最底层</Description>
+          <Class>
+            <Name>Alloy</Name>
+          </Class>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>132</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>139</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>179</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>2100</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>4e-06</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>22</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>1000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>1.13</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa11" format="float">
+              <Data>26000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.3</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>21666666.6666667</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>10000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">e1819263-6a12-433f-954c-8bfdfd90c547</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Firebrick</Name>
+          <Class>
+            <Name>Alloy</Name>
+          </Class>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>132</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>139</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>179</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>500</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.1314,0.1474</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>20,100</Data>
+              <Qualifier name="Variable Type">Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa19" format="float">
+              <Data>36800000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.25</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>24533333333.3333</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>14720000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">55944909-0555-49ed-bd10-4f1834843a5b</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>4e-06</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>
+              </Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>1050</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Granite</Name>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>170</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>2300</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>1.8</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>800</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr2">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa8" format="float">
+              <Data>1e-05</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr8">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Secant</Qualifier>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <ParameterValue parameter="pa13" format="float">
+              <Data>
+              </Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Coefficient of Thermal Expansion</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr6">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa19" format="float">
+              <Data>25000000000</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa14" format="float">
+              <Data>0.2</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa15" format="float">
+              <Data>13888888888.8889</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa16" format="float">
+              <Data>10416666666.6667</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Mineral wool</Name>
+          <Description>矿物棉，保温层最外侧</Description>
+          <Class>
+            <Name>Alloy</Name>
+          </Class>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>132</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>139</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>179</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>100</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>1220</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>7.88860905221012e-31</Data>
+              <Qualifier name="Variable Type">Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.035,0.0494,0.1394</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>20,100,600</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">0a018d12-10a2-45a4-b819-763c8366455d</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Material>
+        <BulkDetails>
+          <Name>Molten salt</Name>
+          <Description>Wan等, 《Evaluation on Thermal and Mechanical Performance of the Hot Tank in the Two-Tank Molten Salt Heat Storage System》.</Description>
+          <Class>
+            <Name>Gas</Name>
+          </Class>
+          <PropertyData property="pr1">
+            <Data format="string">-</Data>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa5" format="float">
+              <Data>2263.72,2231.72,2199.72,2167.72,2135.72,2103.72,2071.72,2039.72,2007.72,1975.72,1943.72,1911.72,1879.72</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>0,50,100,150,200,250,300,350,400,450,500,550,600</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr5">
+            <Data format="string">-</Data>
+            <Qualifier name="Definition">Constant Pressure</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <Qualifier name="Symbol">Cᵨ</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa10" format="float">
+              <Data>1396,1499.2</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>0,600</Data>
+              <Qualifier name="Variable Type">Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr7">
+            <Data format="string">-</Data>
+            <Qualifier name="Behavior">Isotropic</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa4" format="string">
+              <Data>Interpolation Options</Data>
+              <Qualifier name="AlgorithmType">Linear Multivariate</Qualifier>
+              <Qualifier name="Normalized">True</Qualifier>
+              <Qualifier name="Cached">True</Qualifier>
+              <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa12" format="float">
+              <Data>0.39,0.3995,0.409,0.4185,0.428,0.4375,0.447,0.4565,0.466,0.4755,0.485,0.4945,0.504</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>0,50,100,150,200,250,300,350,400,450,500,550,600</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr14">
+            <Data format="string">-</Data>
+            <Qualifier name="BETA">Mechanical.ModalAcoustics</Qualifier>
+            <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
+            <ParameterValue parameter="pa20" format="float">
+              <Data>0.0755,0.062454125,0.051043,0.041156375,0.032684,0.025515625,0.019541,0.014649875,0.010732,0.007677125,0.005375,0.003715375,0.002588</Data>
+              <Qualifier name="Variable Type">Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent,Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa6" format="float">
+              <Data>0,50,100,150,200,250,300,350,400,450,500,550,600</Data>
+              <Qualifier name="Variable Type">Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent,Independent</Qualifier>
+              <Qualifier name="Field Variable">Temperature</Qualifier>
+              <Qualifier name="Default Data">22</Qualifier>
+              <Qualifier name="Field Units">C</Qualifier>
+              <Qualifier name="Upper Limit">Program Controlled</Qualifier>
+              <Qualifier name="Lower Limit">Program Controlled</Qualifier>
+            </ParameterValue>
+          </PropertyData>
+          <PropertyData property="pr11">
+            <Data format="string">-</Data>
+            <Qualifier name="guid">db0f36d2-9503-4bbe-82ad-506fd86b4108</Qualifier>
+            <Qualifier name="Display">False</Qualifier>
+          </PropertyData>
+          <PropertyData property="pr0">
+            <Data format="string">-</Data>
+            <ParameterValue parameter="pa0" format="float">
+              <Data>181</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa1" format="float">
+              <Data>194</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa2" format="float">
+              <Data>156</Data>
+              <Qualifier name="Variable Type">Dependent</Qualifier>
+            </ParameterValue>
+            <ParameterValue parameter="pa3" format="string">
+              <Data>Appearance</Data>
+            </ParameterValue>
+          </PropertyData>
+        </BulkDetails>
+      </Material>
+      <Metadata>
+        <ParameterDetails id="pa0">
+          <Name>Red</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa1">
+          <Name>Green</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa2">
+          <Name>Blue</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa3">
+          <Name>Material Property</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa4">
+          <Name>Options Variable</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa5">
+          <Name>Density</Name>
+          <Units name="Density">
+            <Unit>
+              <Name>kg</Name>
+            </Unit>
+            <Unit power="-3">
+              <Name>m</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa6">
+          <Name>Temperature</Name>
+          <Units name="Temperature">
+            <Unit>
+              <Name>C</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa8">
+          <Name>Coefficient of Thermal Expansion</Name>
+          <Units name="InvTemp1">
+            <Unit power="-1">
+              <Name>C</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa10">
+          <Name>Specific Heat</Name>
+          <Units name="Specific Heat Capacity">
+            <Unit>
+              <Name>J</Name>
+            </Unit>
+            <Unit power="-1">
+              <Name>kg</Name>
+            </Unit>
+            <Unit power="-1">
+              <Name>C</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa12">
+          <Name>Thermal Conductivity</Name>
+          <Units name="Thermal Conductivity">
+            <Unit>
+              <Name>W</Name>
+            </Unit>
+            <Unit power="-1">
+              <Name>m</Name>
+            </Unit>
+            <Unit power="-1">
+              <Name>C</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa7">
+          <Name>Opacity</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa9">
+          <Name>Metallic Finish</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa11">
+          <Name>Young's Modulus</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa14">
+          <Name>Poisson's Ratio</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa15">
+          <Name>Bulk Modulus</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa16">
+          <Name>Shear Modulus</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa17">
+          <Name>Tensile Yield Strength</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa18">
+          <Name>Tensile Ultimate Strength</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa13">
+          <Name>Zero-Thermal-Strain Reference Temperature</Name>
+          <Units name="Temperature">
+            <Unit>
+              <Name>C</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa19">
+          <Name>Young's Modulus</Name>
+          <Units name="Stress">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <ParameterDetails id="pa20">
+          <Name>Viscosity</Name>
+          <Units name="Dynamic Viscosity">
+            <Unit>
+              <Name>Pa</Name>
+            </Unit>
+            <Unit>
+              <Name>s</Name>
+            </Unit>
+          </Units>
+        </ParameterDetails>
+        <PropertyDetails id="pr0">
+          <Unitless />
+          <Name>Color</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr1">
+          <Unitless />
+          <Name>Density</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr2">
+          <Unitless />
+          <Name>Coefficient of Thermal Expansion</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr3">
+          <Unitless />
+          <Name>Opacity</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr4">
+          <Unitless />
+          <Name>Metallic Finish</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr5">
+          <Unitless />
+          <Name>Specific Heat</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr6">
+          <Unitless />
+          <Name>Elasticity</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr7">
+          <Unitless />
+          <Name>Thermal Conductivity</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr8">
+          <Unitless />
+          <Name>Zero-Thermal-Strain Reference Temperature</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr9">
+          <Unitless />
+          <Name>Tensile Yield Strength</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr10">
+          <Unitless />
+          <Name>Tensile Ultimate Strength</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr11">
+          <Unitless />
+          <Name>Material Unique Id</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr12">
+          <Unitless />
+          <Name>Granta material details</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr13">
+          <Unitless />
+          <Name>State Info</Name>
+        </PropertyDetails>
+        <PropertyDetails id="pr14">
+          <Unitless />
+          <Name>Viscosity</Name>
+        </PropertyDetails>
+      </Metadata>
+    </MatML_Doc>
+  </Materials>
+</EngineeringData>
