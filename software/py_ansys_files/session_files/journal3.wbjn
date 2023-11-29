@@ -20,17 +20,17 @@ system4 = template1.CreateSystem(
     Position="Below",
     RelativeTo=system3)
 engineeringData1 = system4.GetContainer(ComponentName="Engineering Data")
-matl1 = engineeringData1.CreateMaterial(Name="mat")
+mat = engineeringData1.CreateMaterial(Name="mat")
 EngData.EnableFilter(Enable=False)
 
 temp = [20,100,200,300,400,500,565]
 ela = [1.95e+11,1.89e+11,1.83e+11,1.76e+11,1.69e+11,1.6e+11,1.53e+11]
 
-matlProp1 = matl1.CreateProperty(
+matlProp1 = mat.CreateProperty(
     Name="Density",
     Qualifiers={"Definition": "", "Behavior": ""})
 matlProp1.SetData(Variables=["Temperature","Density"], Values = [temp, ela])
-matlProp2 = matl1.CreateProperty(
+matlProp2 = mat.CreateProperty(
     Name="Elasticity",
     Behavior="Isotropic",
     Qualifiers={"Definition": "", "Behavior": "Isotropic"})
@@ -114,19 +114,20 @@ matlProp1.SetData(
 
 ##################################################
 
-densityProp = matl1.CreateProperty(
+densityProp = mat.CreateProperty(
     Name="Density")
-elasticProp = matl1.CreateProperty(Name="Elasticity", Behavior="Isotropic")
-viscosityProp = matl1.CreateProperty(Name="Viscosity")
-thermalConductivityProp = matl1.CreateProperty(
+elasticProp = mat.CreateProperty(Name="Elasticity", Behavior="Isotropic")
+viscosityProp = mat.CreateProperty(Name="Viscosity")
+thermalConductivityProp = mat.CreateProperty(
     Name="Thermal Conductivity",
     Behavior="Isotropic")
-thermalExpansionProp = matl1.CreateProperty(
+thermalExpansionProp = mat.CreateProperty(
     Name="Coefficient of Thermal Expansion",
     Definition="Secant",
-    Behavior="Isotropic")
-
-
+    Behavior="Isotropic").SetData(SheetName="Coefficient of Thermal Expansion",
+                                  SheetQualifiers={"Definition": "Secant", "Behavior": "Isotropic"},
+                                  Index=-1,Variables=["Coefficient of Thermal Expansion"],
+                                  Values=[["5 [C^-1]"]])
 
 
 
@@ -135,3 +136,6 @@ densityProp.SetData(Variables=["Density"],Values=[5]) # [5]或者[[5]]都可以
 
 elasticProp.SetData(Variables=["Young's Modulus","Poisson's Ratio"], Values=[1,0.1])
 
+elasticProp = mat.CreateProperty(Name="Elasticity",
+                                 Behavior="Isotropic").SetData(Variables=["Young's Modulus","Poisson's Ratio"],
+                                                               Values=[1,0.1])

@@ -1,18 +1,18 @@
 <Materials>
-    <Unit>Metric</Unit>
+    <Unit>MKS_STANDARD</Unit>
     <Material name="347H">
         <property type = "Density">
             <Value>8000</Value>
         </property>
-        <property type = "ThermalConductivity">
+        <property type = "Thermal Conductivity">
             <T>20,100,200,300,400,500,565</T>
             <Value>14.1,15.4,16.8,18.3,19.7,21.2,22.1</Value>
         </property>
-        <property type="SpecificHeat">
+        <property type="Specific Heat">
             <T>22,204,427,649</T>
             <Value>431,490,561,607</Value>
         </property>
-        <property type="ThermalExpansion">
+        <property type="Coefficient of Thermal Expansion">
             <T>20,100,200,300,400,500,565</T>
             <Value>1.53e-05,1.62e-05,1.7e-05,1.77e-05,1.81e-05,1.84e-05,1.87e-05</Value>
             <Tr>22</Tr>
