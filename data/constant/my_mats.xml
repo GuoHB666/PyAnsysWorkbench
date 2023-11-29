@@ -1,0 +1,61 @@
+<Materials>
+    <Material name="347H">
+        <Density>8000</Density>
+        <ThermalConductivity>
+            <T>20,100,200,300,400,500,565</T>
+            <Value>14.1,15.4,16.8,18.3,19.7,21.2,22.1</Value>
+            <Units>Metric</Units>
+        </ThermalConductivity>
+        <SpecificHeat>
+            <T>22,204,427,649</T>
+            <Value>431,490,561,607</Value>
+            <Units>Metric</Units>
+        </SpecificHeat>
+        <ThermalExpansion>
+            <T>20,100,200,300,400,500,565</T>
+            <Value>1.53e-05,1.62e-05,1.7e-05,1.77e-05,1.81e-05,1.84e-05,1.87e-05</Value>
+            <Tr>22</Tr>
+            <Units>Metric</Units>
+        </ThermalExpansion>
+        <ElasticModulus>
+            <T>20,100,200,300,400,500,565</T>
+            <Value>1.95e+11,1.89e+11,1.83e+11,1.76e+11,1.69e+11,1.6e+11,1.53e+11</Value>
+            <Units>Metric</Units>
+        </ElasticModulus>
+        <PoissonRatio>
+            <T>20,100,200,300,400,500,565</T>
+            <Value>0.3,0.3,0.3,0.3,0.3,0.3,0.3</Value>
+            <Units>Metric</Units>
+        </PoissonRatio>
+
+    </Material>
+        <Material name="Carbon Steel">
+        <Density>7850</Density>
+        <ThermalConductivity>
+            <T>23</T>
+            <Value>54.1</Value>
+            <Units>Metric</Units>
+        </ThermalConductivity>
+        <SpecificHeat>
+            <T>23</T>
+            <Value>501.8</Value>
+            <Units>Metric</Units>
+        </SpecificHeat>
+        <ThermalExpansion>
+            <T>23</T>
+            <Value>1.143E-05</Value>
+            <Tr>22</Tr>
+            <Units>Metric</Units>
+        </ThermalExpansion>
+        <ElasticModulus>
+            <T>23</T>
+            <Value>2.124E+11</Value>
+            <Units>Metric</Units>
+        </ElasticModulus>
+        <PoissonRatio>
+            <T>20,100,200,300,400,500,565</T>
+            <Value>0.3,0.3,0.3,0.3,0.3,0.3,0.3</Value>
+            <Units>Metric</Units>
+        </PoissonRatio>
+    </Material>
+</Materials>

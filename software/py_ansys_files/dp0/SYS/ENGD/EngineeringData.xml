@@ -101,7 +101,7 @@
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr5">
+          <PropertyData property="pr6">
             <Data format="string">-</Data>
             <ParameterValue parameter="pa10" format="float">
               <Data>460000000</Data>
@@ -111,7 +111,7 @@
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr6">
+          <PropertyData property="pr7">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Secant</Qualifier>
             <Qualifier name="Behavior">Isotropic</Qualifier>
@@ -123,7 +123,7 @@
               <Qualifier name="Cached">True</Qualifier>
               <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa11" format="float">
+            <ParameterValue parameter="pa14" format="float">
               <Data>1.2e-05</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [C^-1]</Qualifier>
@@ -143,11 +143,11 @@
               <Qualifier name="Lower Limit">Program Controlled</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr7">
+          <PropertyData property="pr8">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Secant</Qualifier>
             <Qualifier name="Behavior">Isotropic</Qualifier>
-            <ParameterValue parameter="pa12" format="float">
+            <ParameterValue parameter="pa16" format="float">
               <Data>22</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [C]</Qualifier>
@@ -158,7 +158,7 @@
               <Data>Coefficient of Thermal Expansion</Data>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr8">
+          <PropertyData property="pr9">
             <Data format="string">-</Data>
             <Qualifier name="Definition">Constant Pressure</Qualifier>
             <Qualifier name="Field Variable Compatible">Temperature</Qualifier>
@@ -170,7 +170,7 @@
               <Qualifier name="Cached">True</Qualifier>
               <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa13" format="float">
+            <ParameterValue parameter="pa17" format="float">
               <Data>434</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [J kg^-1 C^-1]</Qualifier>
@@ -320,7 +320,7 @@
               <Qualifier name="Units">C</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr9">
+          <PropertyData property="pr5">
             <Data format="string">-</Data>
             <Qualifier name="Behavior">Isotropic</Qualifier>
             <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
@@ -339,7 +339,7 @@
               <Qualifier name="Scale">1</Qualifier>
               <Qualifier name="Units">Pa</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa15" format="float">
+            <ParameterValue parameter="pa12" format="float">
               <Data>0.3</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -456,7 +456,7 @@
               <Qualifier name="Lower Limit">Program Controlled</Qualifier>
             </ParameterValue>
           </PropertyData>
-          <PropertyData property="pr9">
+          <PropertyData property="pr5">
             <Data format="string">-</Data>
             <Qualifier name="Behavior">Isotropic</Qualifier>
             <Qualifier name="Derive from">Young's Modulus and Poisson's Ratio</Qualifier>
@@ -468,14 +468,14 @@
               <Qualifier name="Cached">True</Qualifier>
               <Qualifier name="BETA">AlgorithmType$$Linear Multivariate (CGAL)$$EngineeringData.CGAL</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa14" format="float">
+            <ParameterValue parameter="pa11" format="float">
               <Data>209000</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [MPa]</Qualifier>
               <Qualifier name="Scale">1</Qualifier>
               <Qualifier name="Units">MPa</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa15" format="float">
+            <ParameterValue parameter="pa12" format="float">
               <Data>0.3</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0</Qualifier>
@@ -483,14 +483,14 @@
               <Qualifier name="Units">
               </Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa16" format="float">
+            <ParameterValue parameter="pa13" format="float">
               <Data>174166.666666667</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [MPa]</Qualifier>
               <Qualifier name="Scale">1</Qualifier>
               <Qualifier name="Units">MPa</Qualifier>
             </ParameterValue>
-            <ParameterValue parameter="pa17" format="float">
+            <ParameterValue parameter="pa15" format="float">
               <Data>80384.6153846154</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Offset">0 [MPa]</Qualifier>
@@ -540,10 +540,6 @@
           <Name>Density</Name>
           <Units name="Density" />
         </ParameterDetails>
-        <ParameterDetails id="pa8">
-          <Name>Temperature</Name>
-          <Units name="Temperature" />
-        </ParameterDetails>
         <ParameterDetails id="pa9">
           <Name>Tensile Yield Strength</Name>
           <Units name="Stress" />
@@ -552,15 +548,15 @@
           <Name>Tensile Ultimate Strength</Name>
           <Units name="Stress" />
         </ParameterDetails>
-        <ParameterDetails id="pa11">
+        <ParameterDetails id="pa14">
           <Name>Coefficient of Thermal Expansion</Name>
           <Units name="InvTemp1" />
         </ParameterDetails>
-        <ParameterDetails id="pa12">
+        <ParameterDetails id="pa16">
           <Name>Zero-Thermal-Strain Reference Temperature</Name>
           <Units name="Temperature" />
         </ParameterDetails>
-        <ParameterDetails id="pa13">
+        <ParameterDetails id="pa17">
           <Name>Specific Heat</Name>
           <Units name="Specific Heat Capacity" />
         </ParameterDetails>
@@ -618,18 +614,22 @@
         <ParameterDetails id="pa32">
           <Name>Relative Permeability</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa14">
+        <ParameterDetails id="pa8">
+          <Name>Temperature</Name>
+          <Units name="Temperature" />
+        </ParameterDetails>
+        <ParameterDetails id="pa11">
           <Name>Young's Modulus</Name>
           <Units name="Stress" />
         </ParameterDetails>
-        <ParameterDetails id="pa15">
+        <ParameterDetails id="pa12">
           <Name>Poisson's Ratio</Name>
         </ParameterDetails>
-        <ParameterDetails id="pa16">
+        <ParameterDetails id="pa13">
           <Name>Bulk Modulus</Name>
           <Units name="Stress" />
         </ParameterDetails>
-        <ParameterDetails id="pa17">
+        <ParameterDetails id="pa15">
           <Name>Shear Modulus</Name>
           <Units name="Stress" />
         </ParameterDetails>
@@ -649,19 +649,19 @@
           <Name>Tensile Yield Strength</Name>
         </PropertyDetails>
         <PropertyDetails id="pr5">
-          <Name>Tensile Ultimate Strength</Name>
+          <Name>Elasticity</Name>
         </PropertyDetails>
         <PropertyDetails id="pr6">
-          <Name>Coefficient of Thermal Expansion</Name>
+          <Name>Tensile Ultimate Strength</Name>
         </PropertyDetails>
         <PropertyDetails id="pr7">
-          <Name>Zero-Thermal-Strain Reference Temperature</Name>
+          <Name>Coefficient of Thermal Expansion</Name>
         </PropertyDetails>
         <PropertyDetails id="pr8">
-          <Name>Specific Heat</Name>
+          <Name>Zero-Thermal-Strain Reference Temperature</Name>
         </PropertyDetails>
         <PropertyDetails id="pr9">
-          <Name>Elasticity</Name>
+          <Name>Specific Heat</Name>
         </PropertyDetails>
         <PropertyDetails id="pr10">
           <Name>Thermal Conductivity</Name>

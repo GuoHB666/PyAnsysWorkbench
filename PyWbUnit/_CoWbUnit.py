@@ -19,7 +19,6 @@ __author__ = "GUO HB"
 class CoWbUnitProcess(object):
 
     """Unit class for co-simulation with Workbench using Python.
-
     >>> coWbUnit = CoWbUnitProcess()
     >>> coWbUnit._initialize()
     >>> command = 'GetTemplate(TemplateName="Static Structural", Solver="ANSYS").CreateSystem()'
@@ -29,9 +28,7 @@ class CoWbUnitProcess(object):
     >>> coWbUnit.saveProject(r'D:/example.wbpj')
     >>> coWbUnit.finalize()
     """
-
     _aasName = "aaS_WbId.txt"
-
     def __init__(self, workDir=None, wbpjName="py_ansys.wbpj",version=212, interactive=True):
         """
         Constructor of CoWbUnitProcess.

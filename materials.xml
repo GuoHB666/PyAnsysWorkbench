@@ -1,0 +1,18 @@
+<Materials>
+    <Material name="Material1">
+        <Temperature1>100</Temperature1>
+        <Value1>10.5</Value1>
+        <Temperature2>200</Temperature2>
+        <Value2>15.2</Value2>
+    </Material>
+
+    <Material name="Material2">
+        <Temperature1>150</Temperature1>
+        <Value1>8.3</Value1>
+        <Temperature2>250</Temperature2>
+        <Value2>12.9</Value2>
+    </Material>
+
+</Materials>
+
+

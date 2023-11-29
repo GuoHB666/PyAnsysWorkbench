@@ -1,0 +1,137 @@
+# encoding: utf-8
+# 2021 R2
+SetScriptVersion(Version="21.2.209")
+system1 = GetSystem(Name="SYS 2")
+system1.Delete()
+system2 = GetSystem(Name="SYS 1")
+system2.Delete()
+Save(Overwrite=True)
+
+
+temp = [20,100,200,300,400,500,565]
+ela = [1.95e+11,1.89e+11,1.83e+11,1.76e+11,1.69e+11,1.6e+11,1.53e+11]
+
+
+template1 = GetTemplate(
+    TemplateName="Steady-State Thermal",
+    Solver="ANSYS")
+system3 = GetSystem(Name="SYS")
+system4 = template1.CreateSystem(
+    Position="Below",
+    RelativeTo=system3)
+engineeringData1 = system4.GetContainer(ComponentName="Engineering Data")
+matl1 = engineeringData1.CreateMaterial(Name="mat")
+EngData.EnableFilter(Enable=False)
+
+temp = [20,100,200,300,400,500,565]
+ela = [1.95e+11,1.89e+11,1.83e+11,1.76e+11,1.69e+11,1.6e+11,1.53e+11]
+
+matlProp1 = matl1.CreateProperty(
+    Name="Density",
+    Qualifiers={"Definition": "", "Behavior": ""})
+matlProp1.SetData(Variables=["Temperature","Density"], Values = [temp, ela])
+matlProp2 = matl1.CreateProperty(
+    Name="Elasticity",
+    Behavior="Isotropic",
+    Qualifiers={"Definition": "", "Behavior": "Isotropic"})
+matlProp2.SetData(Variables=["Young's Modulus","Poisson's Ratio"], Values = [5, 4])
+
+
+
+# SetProjectUnitSystem(UnitSystemName="")
+
+matlProp1.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["0 [C]"]])
+matlProp1.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Variables=["Density"],
+    Values=[["100 [tonne mm^-3]"]])
+matlProp1.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["10 [C]"]])
+matlProp1.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Variables=["Density"],
+    Values=[["5 [tonne mm^-3]"]])
+matlProp1.SetData(
+    SheetName="Density",
+    SheetQualifiers={"Definition": "", "Behavior": ""},
+    Index=1,
+    Variables=["Density"],
+    Values=[["55 [tonne mm^-3]"]])
+matlProp2.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["0 [C]"]])
+matlProp2.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Variables=["Young's Modulus"],
+    Values=[["6 [MPa]"]])
+matlProp2.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Index=-1,
+    Variables=["Temperature"],
+    Values=[["100 [C]"]])
+matlProp2.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Index=1,
+    Variables=["Young's Modulus"],
+    Values=[["666 [MPa]"]])
+matlProp2.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Variables=["Poisson's Ratio"],
+    Values=[["0.3"]])
+matlProp2.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Index=1,
+    Variables=["Poisson's Ratio"],
+    Values=[["0.3"]])
+Save(Overwrite=True)
+
+###############################################################
+matlProp1.SetData(
+    SheetName="Elasticity",
+    SheetQualifiers={"Definition": "", "Behavior": "Isotropic", "Derive from": "Young's Modulus and Poisson's Ratio"},
+    Index=1,
+    Variables=["Poisson's Ratio"],
+    Values=[["0.3","0.3"]])
+
+##################################################
+
+densityProp = matl1.CreateProperty(
+    Name="Density")
+elasticProp = matl1.CreateProperty(Name="Elasticity", Behavior="Isotropic")
+viscosityProp = matl1.CreateProperty(Name="Viscosity")
+thermalConductivityProp = matl1.CreateProperty(
+    Name="Thermal Conductivity",
+    Behavior="Isotropic")
+thermalExpansionProp = matl1.CreateProperty(
+    Name="Coefficient of Thermal Expansion",
+    Definition="Secant",
+    Behavior="Isotropic")
+
+
+
+
+
+densityProp.SetData(Variables=["Density"],Values=[5]) # [5]或者[[5]]都可以
+
+
+elasticProp.SetData(Variables=["Young's Modulus","Poisson's Ratio"], Values=[1,0.1])
+
