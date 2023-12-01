@@ -47,8 +47,6 @@ class CoWbUnitProcess(object):
             raise CoWbUnitRuntimeError(f"ANSYS version: v{version} is not installed!")
         self._ansysDir = Path(os.environ[f"AWP_ROOT{version}"])
         self._wbExe = self._ansysDir / "Framework" / "bin" / "Win64" / "runwb2.exe" # ansys workbench软件位置
-
-
         self._setting = None # UI界面设置的定义，之后再完善。
         self._interactive = interactive
         self._process = None
@@ -57,6 +55,8 @@ class CoWbUnitProcess(object):
         self.geo_script = None
         self.mech_launch_script = None
         self.mech_calcu_script = None
+
+        self.script_generation()
     def simula_system_run(self):
         self._initialize()          # ! 和Ansys Workbench建立连接
         self._simula_sys_creat()    # ! 创建仿真系统
@@ -85,7 +85,7 @@ class CoWbUnitProcess(object):
         # 启动ansys workbench的批处理命令
         self._process = subprocess.Popen(batchArgs, cwd=str(self._workDir.absolute()),
                                           stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-    def script_generation(self,boundary_conditions,calcu_type="structural"):
+    def script_generation(self,calcu_type="structural"):
         if calcu_type=="structural":
             # 脚本创建
             self.material_script = r'''
@@ -172,7 +172,7 @@ class CoWbUnitProcess(object):
             self.geo_script = self._raw_script_process(self.geo_script)
             self.mech_launch_script = self._raw_script_process(self.mech_launch_script)
             self.mech_calcu_script = self._raw_script_process(self.mech_calcu_script)
-        elif calcu_type=="structural":
+        elif calcu_type=="thermal_structural":
             pass
         else:
             pass

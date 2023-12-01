@@ -11,17 +11,17 @@
             <Data format="string">-</Data>
             <Qualifier name="Localized Name">Color</Qualifier>
             <ParameterValue parameter="pa0" format="float">
-              <Data>161</Data>
+              <Data>170</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Red</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa1" format="float">
-              <Data>209</Data>
+              <Data>170</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Green</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa2" format="float">
-              <Data>255</Data>
+              <Data>170</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Blue</Qualifier>
             </ParameterValue>
@@ -191,7 +191,7 @@
     <Materials>
       <Material>
         <Name>Steel</Name>
-        <DataTransferID>88a950a8-b2b9-47fe-8bc3-358e9fa3f266</DataTransferID>
+        <DataTransferID>5d10d53d-0168-4280-af9c-c479d948b17e</DataTransferID>
         <PreviousTransferIDs>
         </PreviousTransferIDs>
       </Material>

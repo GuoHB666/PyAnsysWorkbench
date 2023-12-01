@@ -11,11 +11,11 @@
 /COM,
 ! ****** End   Custom Load Command Snippet ******
 *DIM,_wb_ProjectScratch_dir,string,248
-_wb_ProjectScratch_dir(1) = 'C:\Users\GuoHB\AppData\Local\Temp\WB_GuoHB_24984_2\_ProjectScratch\ScrF157\'
+_wb_ProjectScratch_dir(1) = 'C:\Users\GuoHB\AppData\Local\Temp\WB_GuoHB_14036_2\_ProjectScratch\ScrF983\'
 *DIM,_wb_SolverFiles_dir,string,248
-_wb_SolverFiles_dir(1) = 'C:\Users\GuoHB\AppData\Local\Temp\WB_GuoHB_24984_2\wbnew_files\dp0\SYS\MECH\'
+_wb_SolverFiles_dir(1) = 'C:\Users\GuoHB\AppData\Local\Temp\WB_GuoHB_14036_2\wbnew_files\dp0\SYS\MECH\'
 *DIM,_wb_userfiles_dir,string,248
-_wb_userfiles_dir(1) = 'C:\Users\GuoHB\AppData\Local\Temp\WB_GuoHB_24984_2\wbnew_files\user_files\'
+_wb_userfiles_dir(1) = 'C:\Users\GuoHB\AppData\Local\Temp\WB_GuoHB_14036_2\wbnew_files\user_files\'
 /com,--- Data in consistent NMM units. See Solving Units in the help system for more information.
 /units,MPA
 /nopr
@@ -1126,7 +1126,7 @@ eblock,19,solid,,120
         1        1        1        1        0        0        0        0       20        0      120       38      204      201      161      114      139      140      141
       425      775      714      424      618      669      671      619      423      670      672      674
 -1
-!Material Id = {1783F1BB-F60F-4073-950E-83EE2209BC41}
+!Material Id = {366B9D21-AD9F-4CE8-A7B5-E26613007D1B}
 /wb,elem,end               !  done creating elements
 /com,*********** Send User Defined Coordinate System(s) ***********
 csys,0
@@ -1138,7 +1138,7 @@ tref,22.
 MP,DENS,1,7.85e-09,	! tonne mm^-3
 MP,EX,1,209000,	! tonne s^-2 mm^-1
 MP,NUXY,1,0.3,
-MP,UVID,1,88a950a8-b2b9-47fe-8bc3-358e9fa3f266
+MP,UVID,1,5d10d53d-0168-4280-af9c-c479d948b17e
 
 /wb,mat,end                !  done sending materials
 !************************* Model Summary ********************

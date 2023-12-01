@@ -34,7 +34,7 @@ model1 = system1.GetContainer(ComponentName="Model")
 model1.Edit(Hidden=True)
 model1.SendCommand(
     Command="""# encoding: utf-8
-# 给定Named Selection名称获取子对象实例
+# 基于名称选中对应面
 def GetLocByName(ns_name):
     for ns in Model.NamedSelections.Children:
         if ns.Name == ns_name: return ns
@@ -55,6 +55,7 @@ fixSup.Location= GetLocByName(\"ns_fixSup\")
 pressLoad = analysis.AddPressure()
 pressLoad.Location = GetLocByName(\"ns_press\")
 pressLoad.Magnitude.Output.DiscreteValues = [Quantity(\"0.5 [MPa]\")]
+# 求解
 Model.Solve()
 # 后处理操作
 solution = analysis.Solution
