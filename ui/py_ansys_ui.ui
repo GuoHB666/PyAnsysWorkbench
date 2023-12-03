@@ -210,9 +210,9 @@
           </property>
           <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
            <item>
-            <widget class="QTabWidget" name="tabWidget">
+            <widget class="QTabWidget" name="tab_mat">
              <property name="currentIndex">
-              <number>0</number>
+              <number>1</number>
              </property>
              <widget class="QWidget" name="tab_fluid">
               <attribute name="title">
@@ -296,30 +296,6 @@
                  <attribute name="verticalHeaderStretchLastSection">
                   <bool>false</bool>
                  </attribute>
-                 <row>
-                  <property name="text">
-                   <string>1</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>2</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>3</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </row>
                  <column>
                   <property name="text">
                    <string>名称</string>
@@ -363,91 +339,6 @@
                    <set>AlignCenter</set>
                   </property>
                  </column>
-                 <item row="0" column="0">
-                  <property name="text">
-                   <string>molten salt</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="1">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="2">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="3">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="4">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="0">
-                  <property name="text">
-                   <string>air</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="1">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="2">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="3">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="4">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="0">
-                  <property name="text">
-                   <string/>
-                  </property>
-                 </item>
                 </widget>
                </item>
                <item>
@@ -495,21 +386,6 @@
                  <attribute name="verticalHeaderStretchLastSection">
                   <bool>false</bool>
                  </attribute>
-                 <row>
-                  <property name="text">
-                   <string>1</string>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>2</string>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>3</string>
-                  </property>
-                 </row>
                  <column>
                   <property name="text">
                    <string>温度</string>
@@ -520,54 +396,6 @@
                    <string>大小</string>
                   </property>
                  </column>
-                 <item row="0" column="0">
-                  <property name="text">
-                   <string>0</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="1">
-                  <property name="text">
-                   <string>2263.7</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="0">
-                  <property name="text">
-                   <string>300</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="1">
-                  <property name="text">
-                   <string>2071.7</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="0">
-                  <property name="text">
-                   <string>600</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="1">
-                  <property name="text">
-                   <string>1879.7</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
                 </widget>
                </item>
               </layout>
@@ -593,7 +421,7 @@
                 <number>0</number>
                </property>
                <item>
-                <widget class="QTableWidget" name="mat_table_fluid_2">
+                <widget class="QTableWidget" name="table_mat_solid">
                  <property name="enabled">
                   <bool>true</bool>
                  </property>
@@ -606,9 +434,6 @@
                  <property name="textElideMode">
                   <enum>Qt::ElideMiddle</enum>
                  </property>
-                 <attribute name="horizontalHeaderVisible">
-                  <bool>false</bool>
-                 </attribute>
                  <attribute name="horizontalHeaderCascadingSectionResizes">
                   <bool>false</bool>
                  </attribute>
@@ -645,30 +470,6 @@
                  <attribute name="verticalHeaderStretchLastSection">
                   <bool>false</bool>
                  </attribute>
-                 <row>
-                  <property name="text">
-                   <string>1</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>2</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>3</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </row>
                  <column>
                   <property name="text">
                    <string>名称</string>
@@ -690,7 +491,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>比热容</string>
+                   <string>导热系数</string>
                   </property>
                   <property name="textAlignment">
                    <set>AlignCenter</set>
@@ -698,7 +499,7 @@
                  </column>
                  <column>
                   <property name="text">
-                   <string>导热系数</string>
+                   <string>比热容</string>
                   </property>
                   <property name="textAlignment">
                    <set>AlignCenter</set>
@@ -728,171 +529,6 @@
                    <set>AlignCenter</set>
                   </property>
                  </column>
-                 <item row="0" column="0">
-                  <property name="text">
-                   <string>347H</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="1">
-                  <property name="text">
-                   <string>800</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="2">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="3">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="4">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="5">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="6">
-                  <property name="text">
-                   <string>0.3</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="0">
-                  <property name="text">
-                   <string>Mineral wool</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="1">
-                  <property name="text">
-                   <string>100</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="2">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="3">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="4">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="5">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="6">
-                  <property name="text">
-                   <string>0.3</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="0">
-                  <property name="text">
-                   <string>Concrete</string>
-                  </property>
-                 </item>
-                 <item row="2" column="1">
-                  <property name="text">
-                   <string>2200</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="2">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="3">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="4">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="5">
-                  <property name="text">
-                   <string>Tabular</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="6">
-                  <property name="text">
-                   <string>0.3</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
                 </widget>
                </item>
                <item>
@@ -903,7 +539,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QTableWidget" name="tableWidget_2">
+                <widget class="QTableWidget" name="table_temp_solid">
                  <attribute name="horizontalHeaderVisible">
                   <bool>false</bool>
                  </attribute>
@@ -928,21 +564,6 @@
                  <attribute name="verticalHeaderStretchLastSection">
                   <bool>false</bool>
                  </attribute>
-                 <row>
-                  <property name="text">
-                   <string>1</string>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>2</string>
-                  </property>
-                 </row>
-                 <row>
-                  <property name="text">
-                   <string>3</string>
-                  </property>
-                 </row>
                  <column>
                   <property name="text">
                    <string>温度</string>
@@ -953,54 +574,6 @@
                    <string>大小</string>
                   </property>
                  </column>
-                 <item row="0" column="0">
-                  <property name="text">
-                   <string>20</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="0" column="1">
-                  <property name="text">
-                   <string>1.53E-05</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="0">
-                  <property name="text">
-                   <string>100</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="1" column="1">
-                  <property name="text">
-                   <string>1.62E-05</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="0">
-                  <property name="text">
-                   <string>200</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
-                 <item row="2" column="1">
-                  <property name="text">
-                   <string>1.7E-05</string>
-                  </property>
-                  <property name="textAlignment">
-                   <set>AlignCenter</set>
-                  </property>
-                 </item>
                 </widget>
                </item>
               </layout>
@@ -1026,7 +599,7 @@
              <item>
               <widget class="QPushButton" name="button_mat_export">
                <property name="text">
-                <string>导出材料</string>
+                <string>写入材料库</string>
                </property>
               </widget>
              </item>
@@ -1042,6 +615,20 @@
                 </size>
                </property>
               </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttom_add_mat_temp">
+               <property name="text">
+                <string>添加温度</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="buttom_add_mat_value">
+               <property name="text">
+                <string>写入材料</string>
+               </property>
+              </widget>
              </item>
             </layout>
            </item>
@@ -1266,48 +853,7 @@
                 </widget>
                </item>
                <item>
-                <widget class="QListWidget" name="listWidget_2">
-                 <item>
-                  <property name="text">
-                   <string>molten salt(fluid1)</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>air(fluid2)</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>347H(tank)</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Mineral wool(insulation)</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Coarse sand(base1)</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Ceramsite(base2)</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Fine gravel(base3)</string>
-                  </property>
-                 </item>
-                 <item>
-                  <property name="text">
-                   <string>Firebrick(base4)</string>
-                  </property>
-                 </item>
-                </widget>
+                <widget class="QListWidget" name="listWidget_2"/>
                </item>
                <item>
                 <layout class="QHBoxLayout" name="horizontalLayout_9">

@@ -40,15 +40,9 @@ def get_mat_property(property_elem):
         else:
             property_data = float(values)
 
-    if temperatures_elem is None:
-        temperature_variables = []
-    else:
-        temperature_variables = ["Temperature"]
+    temperature_variables = [] if temperatures_elem is None else ["Temperature"]
+    property_variables = ["Young's Modulus", "Poisson's Ratio"] if property_type == "Elasticity" else [property_type]
 
-    if property_type == "Elasticity":
-        property_variables = ["Young's Modulus", "Poisson's Ratio"]
-    else:
-        property_variables = [property_type]
     mat_variables = temperature_variables+property_variables
     return tr_value,mat_variables,property_type,property_data
 def mat_creations(mat_xml,engineeringData):
@@ -82,7 +76,7 @@ def mat_creations(mat_xml,engineeringData):
                     Variables=mat_variables, Values=property_data)
 
 
-mat_xml = "D:\GuoHB\MyFiles\Code\PyAnsysWorkbench\my_mats2.0.xml"
+mat_xml = "D:\GuoHB\MyFiles\Code\PyAnsysWorkbench\data\constant\my_mats2.0.xml"
 
 try:
     # 如果有现成的材料系统，则
