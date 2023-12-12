@@ -346,17 +346,17 @@
             <Data format="string">-</Data>
             <Qualifier name="Localized Name">Color</Qualifier>
             <ParameterValue parameter="pa0" format="float">
-              <Data>170</Data>
+              <Data>161</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Red</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa1" format="float">
-              <Data>170</Data>
+              <Data>209</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Green</Qualifier>
             </ParameterValue>
             <ParameterValue parameter="pa2" format="float">
-              <Data>170</Data>
+              <Data>255</Data>
               <Qualifier name="Variable Type">Dependent</Qualifier>
               <Qualifier name="Localized Name">Blue</Qualifier>
             </ParameterValue>
@@ -438,8 +438,12 @@
         </BulkDetails>
       </Material>
       <Metadata>
-        <ParameterDetails id="pa3">
-          <Name>Material Property</Name>
+        <ParameterDetails id="pa1">
+          <Name>Green</Name>
+          <Unitless />
+        </ParameterDetails>
+        <ParameterDetails id="pa2">
+          <Name>Blue</Name>
           <Unitless />
         </ParameterDetails>
         <ParameterDetails id="pa4">
@@ -630,12 +634,8 @@
           <Name>Red</Name>
           <Unitless />
         </ParameterDetails>
-        <ParameterDetails id="pa1">
-          <Name>Green</Name>
-          <Unitless />
-        </ParameterDetails>
-        <ParameterDetails id="pa2">
-          <Name>Blue</Name>
+        <ParameterDetails id="pa3">
+          <Name>Material Property</Name>
           <Unitless />
         </ParameterDetails>
         <ParameterDetails id="pa5">
@@ -764,13 +764,13 @@
     <Materials>
       <Material>
         <Name>Structural Steel</Name>
-        <DataTransferID>7f517642-c3dc-414a-bd73-1f7edac12314</DataTransferID>
+        <DataTransferID>7ad42390-3b77-4a02-931f-a1b432636168</DataTransferID>
         <PreviousTransferIDs>
         </PreviousTransferIDs>
       </Material>
       <Material>
         <Name>Steel</Name>
-        <DataTransferID>5d10d53d-0168-4280-af9c-c479d948b17e</DataTransferID>
+        <DataTransferID>fbf2ce65-7c77-4446-b098-07a15dd3aff7</DataTransferID>
         <PreviousTransferIDs>
         </PreviousTransferIDs>
       </Material>

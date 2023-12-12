@@ -20,11 +20,11 @@
      number of negative pivots encountered   =               0
      factorization panel size                =             128
      number of cores used                    =               8
-     time (cpu & wall) for structure input   =        0.000000        0.001190
-     time (cpu & wall) for ordering          =        0.000000        0.004488
-     time (cpu & wall) for other matrix prep =        0.000000        0.009556
-     time (cpu & wall) for value input       =        0.000000        0.000820
-     time (cpu & wall) for matrix distrib.   =        0.000000        0.005909
+     time (cpu & wall) for structure input   =        0.000000        0.000442
+     time (cpu & wall) for ordering          =        0.000000        0.002957
+     time (cpu & wall) for other matrix prep =        0.000000        0.002880
+     time (cpu & wall) for value input       =        0.000000        0.000863
+     time (cpu & wall) for matrix distrib.   =        0.000000        0.003526
 
      i/o stats: unit-Core          file length             amount transferred
                                  words       mbytes          words       mbytes

@@ -2,7 +2,7 @@
 from PyWbUnit import CoWbUnitProcess
 
 coWbUnit = CoWbUnitProcess()
-coWbUnit._initialize()
+coWbUnit.initialize()
 command = 'mechSys = GetTemplate(TemplateName="Static Structural", Solver="ANSYS").CreateSystem()'
 coWbUnit.execWbCommand(command)
 coWbUnit.execWbCommand('systems=GetAllSystems()')

@@ -7,69 +7,9 @@ string1 = Server.StartServer(
     PortMin=9000,
     PortMax=9200,
     WriteConnectionInfoFile="aaS_WbId.txt")
-template1 = GetTemplate(
-    TemplateName="Static Structural",
-    Solver="ANSYS")
-system1 = template1.CreateSystem()
-engineeringData1 = system1.GetContainer(ComponentName="Engineering Data")
-matl1 = engineeringData1.CreateMaterial(Name="Steel")
-matlProp1 = matl1.CreateProperty(Name="Density")
-matlProp1.SetData(
-    Variables=["Density"],
-    Values=[["7850 [kg m^-3]"]])
-matlProp2 = matl1.CreateProperty(
-    Name="Elasticity",
-    Behavior="Isotropic")
-matlProp2.SetData(
-    Variables=["Young's Modulus"],
-    Values=[["209000 [MPa]"]])
-matlProp2.SetData(
-    Variables=["Poisson's Ratio"],
-    Values=[["0.3"]])
-geometry1 = system1.GetContainer(ComponentName="Geometry")
-geometry1.SetFile(FilePath="D:/GuoHB/MyFiles/Code/PyAnsysWorkbench/software/geometry/geo.scdoc")
-modelComponent1 = system1.GetComponent(Name="Model")
-modelComponent1.Refresh()
-model1 = system1.GetContainer(ComponentName="Model")
-model1.Edit(Hidden=True)
-model1.SendCommand(
-    Command="""# encoding: utf-8
-# 基于名称选中对应面
-def GetLocByName(ns_name):
-    for ns in Model.NamedSelections.Children:
-        if ns.Name == ns_name: return ns
-# 指定材料
-matAss = Model.Materials.AddMaterialAssignment()
-matAss.Material = \"Steel\"
-matAss.Location = GetLocByName(\"ns_beamBody\")
-# 划分网格
-mesh = Model.Mesh
-mesh.ElementSize = Quantity(\"10 [mm]\")
-mesh.GenerateMesh()
-# 获得Analyses对象
-analysis = Model.Analyses[0]
-# 添加固定约束
-fixSup = analysis.AddFixedSupport()
-fixSup.Location= GetLocByName(\"ns_fixSup\")
-# 加载压力载荷
-pressLoad = analysis.AddPressure()
-pressLoad.Location = GetLocByName(\"ns_press\")
-pressLoad.Magnitude.Output.DiscreteValues = [Quantity(\"0.5 [MPa]\")]
-# 求解
-Model.Solve()
-# 后处理操作
-solution = analysis.Solution
-misesResult = solution.AddEquivalentStress()
-misesResult.EvaluateAllResults()
-# 设置视角
-camera = ExtAPI.Graphics.Camera
-camera.UpVector = Vector3D(0,0,1)
-camera.SceneWidth = Quantity(\"150 [mm]\")
-camera.SceneHeight = Quantity(\"120 [mm]\")
-camera.FocalPoint = Point((0.08,0.0125,0), 'm')
-# 输出后处理云图
-misesResult.Activate()
-ExtAPI.Graphics.ExportImage(\"D:\\GuoHB\\MyFiles\\Code\\PyAnsysWorkbench\")""",
-    Language="Python")
-model1.Exit()
+RunScript(FilePath="D:/GuoHB/MyFiles/Code/PyAnsysWorkbench/software/scripts/systems_building.py")
+RunScript(FilePath="D:/GuoHB/MyFiles/Code/PyAnsysWorkbench/software/scripts/mat_creation.py")
+RunScript(FilePath="D:/GuoHB/MyFiles/Code/PyAnsysWorkbench/software/scripts/geo_import.py")
+RunScript(FilePath="D:/GuoHB/MyFiles/Code/PyAnsysWorkbench/software/scripts/calcu_launch.py")
+RunScript(FilePath="D:/GuoHB/MyFiles/Code/PyAnsysWorkbench/software/scripts/calcu_run.py")
 Save(Overwrite=True)

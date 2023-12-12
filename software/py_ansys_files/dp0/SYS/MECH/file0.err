@@ -1,10 +1,10 @@
-/COM,ANSYS RELEASE 2021 R2           BUILD 21.2      UP20210601       23:12:21
+/COM,ANSYS RELEASE 2021 R2           BUILD 21.2      UP20210601       12:02:42
 
- *** WARNING ***                         CP =       0.438   TIME= 23:12:22
+ *** WARNING ***                         CP =       0.391   TIME= 12:02:44
  Element shape checking is currently inactive.  Issue SHPP,ON or         
  SHPP,WARN to reactivate, if desired.                                    
 
- *** WARNING ***                         CP =       0.516   TIME= 23:12:22
+ *** WARNING ***                         CP =       0.391   TIME= 12:02:44
  Material number 2 (used by element 333) should normally have at least   
  one MP or one TB type command associated with it.  Output of energy by  
  material may not be available.                                          

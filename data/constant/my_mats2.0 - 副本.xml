@@ -1,0 +1,69 @@
+<Materials>
+    <Unit>MKS_STANDARD</Unit>
+
+    <Material name="Steel">
+        <mat_type>Solid</mat_type>
+        <property type = "Density">
+            <Value>7850</Value>
+        </property>
+        <property type="Elasticity">
+            <Value>
+                <ElasticModulus>209.e3</ElasticModulus>
+                <PoissonRatio>0.3</PoissonRatio>
+            </Value>
+        </property>
+    </Material>
+
+    <Material name="347H">
+        <mat_type>Solid</mat_type>
+        <property type = "Density">
+            <Value>8000</Value>
+        </property>
+        <property type = "Thermal Conductivity">
+            <T>20,100,200,300,400,500,565</T>
+            <Value>14.1,15.4,16.8,18.3,19.7,21.2,22.1</Value>
+        </property>
+        <property type="Specific Heat">
+            <T>22,204,427,649</T>
+            <Value>431,490,561,607</Value>
+        </property>
+        <property type="Coefficient of Thermal Expansion">
+            <T>100,200,300,400,500,565</T>
+            <Value>1.62e-05,1.7e-05,1.77e-05,1.81e-05,1.84e-05,1.87e-05</Value>
+            <Tr>20</Tr>
+        </property>
+        <property type="Elasticity">
+            <T>20,100,200,300,400,500,565</T>
+            <Value>
+                <ElasticModulus>1.95e+11,1.89e+11,1.83e+11,1.76e+11,1.69e+11,1.6e+11,1.53e+11</ElasticModulus>
+                <PoissonRatio>0.3,0.3,0.3,0.3,0.3,0.3,0.3</PoissonRatio>
+            </Value>
+        </property>
+    </Material>
+    <Material name="347H2">
+        <mat_type>Solid</mat_type>
+        <property type = "Density">
+            <Value>8000</Value>
+        </property>
+        <property type = "Thermal Conductivity">
+            <T>20,100,200,300,400,500,565</T>
+            <Value>14.1,15.4,16.8,18.3,19.7,21.2,22.1</Value>
+        </property>
+        <property type="Specific Heat">
+            <T>22,204,427,649</T>
+            <Value>431,490,561,607</Value>
+        </property>
+        <property type="Coefficient of Thermal Expansion">
+            <T>100,200,300,400,500,565</T>
+            <Value>1.62e-05,1.7e-05,1.77e-05,1.81e-05,1.84e-05,1.87e-05</Value>
+            <Tr>20</Tr>
+        </property>
+        <property type="Elasticity">
+            <T>20,100,200,300,400,500,565</T>
+            <Value>
+                <ElasticModulus>1.95e+11,1.89e+11,1.83e+11,1.76e+11,1.69e+11,1.6e+11,1.53e+11</ElasticModulus>
+                <PoissonRatio>0.3,0.3,0.3,0.3,0.3,0.3,0.3</PoissonRatio>
+            </Value>
+        </property>
+    </Material>
+</Materials>
